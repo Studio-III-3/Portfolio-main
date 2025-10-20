@@ -30,7 +30,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-4 mt-6 text-4xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-4 mt-6 text-1xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
           Built for
@@ -44,7 +44,7 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-3 max-w-[500px]"
+          className="text-lg text-gray-400 my-1 max-w-[500px]"
         >
         We re a team of digital creators working across web design, mobile development, UI/UX, and creative technology. From building responsive websites to crafting user-centered apps and interactive experiences — explore our work and see how we bring ideas to life.
         </motion.p>
