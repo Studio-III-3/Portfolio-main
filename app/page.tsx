@@ -1,22 +1,27 @@
-import Encryption from "@/components/main/Encryption";
+"use client";
+
+import React from "react";
 import Hero from "@/components/main/Hero";
-import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
-import Image from "next/image";
 import Services from "@/components/main/Services";
 import Team from "@/components/main/Team";
+import Encryption from "@/components/main/Encryption";
+import Projects from "@/components/main/Projects";
+import Footer from "@/components/main/Footer";
+
 export default function Home() {
   return (
-    <main className="h-full w-full">
-      <div className="flex flex-col gap-20">
-        <Hero />
-        <Skills />
-        <Services />
-        <Team />
-        <Encryption />
-        <Projects />
-        
-      </div>
+    <main className="h-full w-full relative z-10 flex flex-col gap-20">
+      {/* Main Sections */}
+      <Hero />
+      <Skills />
+      <Services />
+      <Team />
+      <Encryption />
+      <Projects />
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }

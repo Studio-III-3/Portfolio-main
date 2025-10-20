@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   RxDiscordLogo,
@@ -16,73 +18,72 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
+    <footer className="w-full bg-transparent text-gray-200 shadow-lg p-6">
       <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
+        <div className="w-full flex flex-row items-start justify-around flex-wrap gap-10">
 
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+          {/* Community */}
+          <div className="min-w-[200px] flex flex-col items-center">
+            <div className="font-bold text-[16px] mb-4">Community</div>
+            <a href="https://www.youtube.com/@STUDIO_1155/" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Youtube</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+              <span className="text-[15px] ml-2">YouTube</span>
+            </a>
+            <a href="https://github.com/Studio-III-3/" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]">Github</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxDiscordLogo />
-              <span className="text-[15px] ml-[6px]">Discord</span>
-            </p>
+              <span className="text-[15px] ml-2">GitHub</span>
+            </a>
           </div>
 
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Social Media</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+          {/* Social Media */}
+          <div className="min-w-[200px] flex flex-col items-center">
+            <div className="font-bold text-[16px] mb-4">Social Media</div>
+            <a href="https://www.instagram.com/Habesha_Bytes" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <RxInstagramLogo />
-              <span className="text-[15px] ml-[6px]">Instagram</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+              <span className="text-[15px] ml-2">Instagram</span>
+            </a>
+            <a href="https://twitter.com/habesha_bytes" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <RxTwitterLogo />
-              <span className="text-[15px] ml-[6px]">Twitter</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+              <span className="text-[15px] ml-2">Twitter</span>
+            </a>
+            <a href="https://www.linkedin.com/in/habesha-bytes-b37ab238b/" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <RxLinkedinLogo />
-              <span className="text-[15px] ml-[6px]">LinkedIn</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+              <span className="text-[15px] ml-2">LinkedIn</span>
+            </a>
+            <a href="https://www.tiktok.com/@habesha_bytes" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <FaTiktok />
-              <span className="text-[15px] ml-[6px]">TikTok</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <FaFacebook />
-              <span className="text-[15px] ml-[6px]">Facebook</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+              <span className="text-[15px] ml-2">TikTok</span>
+            </a>
+            <a href="https://t.me/habesha_byts" target="_blank" rel="noopener noreferrer" className="flex items-center my-2">
               <FaTelegramPlane />
-              <span className="text-[15px] ml-[6px]">Telegram</span>
+              <span className="text-[15px] ml-2">Telegram</span>
+            </a>
+          </div>
+
+          {/* Contact */}
+          <div className="min-w-[200px] flex flex-col items-center">
+            <div className="font-bold text-[16px] mb-4">Contact us</div>
+            <p className="flex items-center my-2">
+              <span className="text-[15px] ml-2">+251-922-147-939</span>
+            </p>
+            <p className="flex items-center my-2">
+              <a
+                href="mailto:habeshabytes@gmail.com"
+                className="text-[15px] ml-2 hover:text-blue-500 transition-colors"
+              >
+                habeshabytes@gmail.com
+              </a>
             </p>
           </div>
 
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">About</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Become Sponsor</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Learning about me</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>
-            </p>
-          </div>
         </div>
 
-        <div className="mb-[20px] text-[15px] text-center">
-          &copy; WebChain Dev 2023 Inc. All rights reserved
+        {/* Footer copyright */}
+        <div className="text-center py-6 text-gray-400 mt-6">
+          &copy; ሐበሻ Bytes. All rights reserved {new Date().getFullYear()}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

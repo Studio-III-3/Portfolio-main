@@ -8,24 +8,53 @@ const Projects = () => {
       id="projects"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
+        Projects
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+          src="/project 1.jpg"
+          title="Studio III IT support"
+          description="Get fast, reliable IT support with Studio III. From troubleshooting to system optimization, we make technology simple and stress-free. Manage your devices, fix issues, and keep your business running smoothly—all in one place. Your tech, empowered."
+        >
+          <a
+            href="https://www.youtube.com/@STUDIO_1155"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-6 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-400 transition-colors"
+          >
+            Learn More
+          </a>
+        </ProjectCard>
+
         <ProjectCard
-          src="/CardImage.png"
+          src="/project 2.jpg"
           title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+          description="Equb App is a modern digital platform that simplifies traditional Ethiopian saving circles. Users can create, join, and manage Equbs, contribute regularly, track their savings, and receive their payouts securely and transparently, all from their smartphone."
+        >
+          <a
+            href="https://www.youtube.com/@STUDIO_1155"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-6 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-400 transition-colors"
+          >
+            Learn More
+          </a>
+        </ProjectCard>
+
         <ProjectCard
-          src="/SpaceWebsite.png"
+          src="/1.png"
           title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+          description="We are a leading software solutions company, delivering innovative web, mobile, and enterprise applications. Our team provides custom development, digital transformation, and IT consultancy to help businesses grow, optimize processes, and stay ahead in the digital era"
+        >
+          <a
+            href="https://www.youtube.com/@STUDIO_1155"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-6 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-400 transition-colors"
+          >
+            Learn More
+          </a>
+        </ProjectCard>
       </div>
     </div>
   );

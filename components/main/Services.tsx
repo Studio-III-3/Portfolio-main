@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import Link from "next/link";
 
 const Services: React.FC = () => {
   return (
@@ -10,30 +13,33 @@ const Services: React.FC = () => {
 
       <div className="w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/webdev.png"
-          title="Web Development"
-          description="Custom, responsive websites tailored to your brand and goals."
+          src="/web 1.png"
+          title="Website Development"
+          description="We design and develop dynamic, SEO-optimized websites that elevate brand presence and drive business growth — from corporate sites to powerful e-commerce platforms."
         />
         <ProjectCard
-          src="/design.png"
-          title="UI/UX Design"
-          description="User-centered design that enhances experience and engagement."
+          src="/mobile 2.png"
+          title="Mobile App Development"
+          description="We create intuitive, scalable mobile applications that enhance customer engagement and streamline business operations across Android and iOS devices."
         />
         <ProjectCard
-          src="/seo.png"
-          title="SEO Optimization"
-          description="Boost your search rankings and online visibility effectively."
+          src="/software 3.jpg"
+          title="System Development"
+          description="We build robust enterprise systems tailored to your workflow — empowering automation, data management, and seamless integration across departments."
         />
       </div>
 
       <div className="mt-20 text-center">
-        <h2 className="text-2xl font-semibold text-white mb-4">Interested in working with us?</h2>
-        <a
-          href="#contact"
-          className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full transition-all"
+        <h2 className="text-2xl font-semibold text-white mb-4">
+          Interested in working with us?
+        </h2>
+
+        <Link
+          href="/packages"
+          className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full transition-all inline-block"
         >
-          Contact Us
-        </a>
+          All Services
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import Link from "next/link";
 
 const Team: React.FC = () => {
   return (
@@ -10,34 +13,40 @@ const Team: React.FC = () => {
 
       <div className="w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/team1.jpg"
+          src="/team1.JPG"
+          title="Kalab Bezuayhu"
+          description="Head of Digital Solutions."
+        />
+        <ProjectCard
+          src="/Team 2.JPG"
+          title="Hailegebreal Samuel"
+          description="Develops scalable web, mobile, and ERP solutions."
+        />
+        <ProjectCard
+          src="/Team 3.JPG"
+          title="Marta shemeles"
+          description="Creates user-centered interfaces and seamless experiences."
+        />
+        <ProjectCard
+          src="/Team 4.JPG"
           title="Abrham Abebe"
-          description="Frontend Developer - Expert in React, animations, and responsive UI."
-        />
-        <ProjectCard
-          src="/team2.jpg"
-          title="Saron Tesfaye"
-          description="Backend Developer - Specializes in APIs, databases, and performance."
-        />
-        <ProjectCard
-          src="/team3.jpg"
-          title="Lidya Mekonen"
-          description="UI/UX Designer - Focused on clean design and user experience."
+          description="Builds secure systems and manages backend and integrations."
         />
       </div>
 
       <div className="mt-20 text-center">
-        <h2 className="text-2xl font-semibold text-white mb-4">Want to collaborate with us?</h2>
-        <a
-          href="#contact"
+        <h2 className="text-2xl font-semibold text-white mb-4">
+          Want to collaborate with us?
+        </h2>
+        <Link
+          href="/contact"
           className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full transition-all"
         >
-          Contact Us
-        </a>
+          Contact Now
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Team;
-
