@@ -46,7 +46,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base sm:text-lg text-gray-400 my-2 sm:my-3 max-w-[500px] mx-auto md:mx-0"
         >
-We're a team of digital creators specializing in web design, mobile development, UI/UX, and creative technology. Explore our work, from responsive websites to user-centered apps, and see how we bring ideas to life.        </motion.p>   
+We&#39;re a team of digital creators specializing in web design, mobile development, UI/UX, and creative technology. Explore our work, from responsive websites to user-centered apps, and see how we bring ideas to life.        </motion.p>   
       </div>
 
       <motion.div
