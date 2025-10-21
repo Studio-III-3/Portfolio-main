@@ -11,7 +11,7 @@ const Team: React.FC = () => {
         Meet the Team
       </h1>
 
-      <div className="w-full flex flex-col md:flex-row gap-10 px-10">
+      <div className="w-full flex flex-col items-center justify-center gap-20 px-14 md:flex-row md:flex-wrap md:px-100">
         <ProjectCard
           src="/team1.JPG"
           title="Kalab Bezuayhu"
@@ -26,6 +26,7 @@ const Team: React.FC = () => {
           src="/Team 3.JPG"
           title="Marta shemeles"
           description="Creates user-centered interfaces and seamless experiences."
+          
         />
         <ProjectCard
           src="/Team 4.JPG"
