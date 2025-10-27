@@ -15,23 +15,23 @@ const Team: React.FC = () => {
         <ProjectCard
           src="/team1.JPG"
           title="Kalab Bezuayhu"
-          description="Head of Digital Solutions."
+          description="coordinates the team and ensures smooth workflow from start to finish."
         />
         <ProjectCard
           src="/Team 2.JPG"
           title="Hailegebreal Samuel"
-          description="Develops scalable web, mobile, and ERP solutions."
+          description="Transforms design into interactive, high performance user interface."
         />
         <ProjectCard
           src="/Team 3.JPG"
           title="Marta shemeles"
-          description="Creates user-centered interfaces and seamless experiences."
+          description="Develops the core logic and manages data to keep system running seamlessly."
           
         />
         <ProjectCard
           src="/Team 4.JPG"
           title="Abrham Abebe"
-          description="Builds secure systems and manages backend and integrations."
+          description="Crafts visually appealing and intuitive designs for the best user experience."
         />
       </div>
 
