@@ -12,17 +12,17 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ src, title, description, children, }) => {
   return (
-    <div className="relative rounded-xl shadow-lg border border-[#2A0E61] flex flex-col bg-gray-900 overflow-hidden hover:scale-[1.02] transition-all duration-300 w-full h-auto">
+    <div className="relative rounded-xl shadow-lg border border-[#2A0E61] flex flex-col bg-gray-900 overflow-hidden hover:scale-[1.02] transition-all duration-300 w-full md:w-[300px] lg:w-[320px] h-auto">
       
       {/* Image Section */}
-      <div className="relative w-full h-[380px] sm:h-[250px] md:h-[320px] overflow-hidden">
+      <div className="relative w-full h-[480px] sm:h-[150px] md:h-[390px] overflow-hidden">
         <Image
           src={src}
           alt={title}
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-[495px] sm:h-[420px] md:h-[140px] object-cover rounded-t-xl transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover rounded-t-xl transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
